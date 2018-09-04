@@ -5,16 +5,17 @@ Problem to solve/Purpose of App: Inform, Educate, Entertain.A
 
 Target Market: High School Students
 
-MVP: A pool of questions with accurate answers about the Capitals that the users can interact with. 
+MVP: A pool of 20 questions with accurate answers about the Capitals that the users can interact with. 
 
 Additional features: Login Function.
                      HighScore saver
 
 Scaling? Adding More subjects
          Augmenting the target segment. 
-         Graphics (i.e. an interactive world map)
+         Graphics (i.e. an interactive world map)gi
          Deploying to the web
 
+File setup - a file for capitals and countries, stored in a hash
 
 
 HOW..
@@ -41,8 +42,7 @@ Russia - Moscow,
 China - Beijing 
 Turkey - Istanbul
 Mongolia - Ulanbatur
-East Turkistan - Urumqi 
-Tibat - Lasa
 Kazakistan - Almaty 
 Uzbekistan - Tashkant 
+
   
