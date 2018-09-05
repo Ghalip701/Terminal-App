@@ -78,11 +78,11 @@
 
 ##### The initial brainstorming took place with a bit of good old fashioned pen and paper:
 
-![Image of Brainstorming]()
+![Image of Brainstorming](https://github.com/Ghalip701/Terminal-App/blob/master/docs/brainstorming.jpg)
 
 ##### Once we had selected a capital city trivia game, we created a file called 'ideas.txt', where we both began writing down various ideas for the app:
 
-![Image of Ideas](https://github.com/Ghalip701/Terminal-App/blob/master/docs/ideas.png)
+![Image of Ideas](https://github.com/Ghalip701/Terminal-App/blob/master/docs/ideas1.png)
 ![Image of Ideas](https://github.com/Ghalip701/Terminal-App/blob/master/docs/ideas.png)
 
 # **Trello Boards**
