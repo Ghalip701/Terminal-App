@@ -1,13 +1,16 @@
-# Terminal-App MVP
+Trivia Newton John
 
-Our MVP has changed as we made our way through the creation of the app. Initially, we had planned a pool of 20 questions, which would be randomized and used to ask users various questions on the capital cities of the data set. 
+-> INFORM. EDUCATE. ENTERTAIN
 
-{INSERT SCREENSHOT}
-
-This was our initial code. Which would have been 20X as long, had we used our whole data set on it. So we progressed onto a dictionary, but had troubles randomising it. Here is our hash. We managed to randomise it using "original_hash.to_a.sample(n).to_h". This worked fine randomising the keys, but made it impossible to reference their value
+This app is a way for high school students to increase their knowledge in geography through an interactive user face. Students will have the option to register, or to enter their details if they are returning.
 
 {INSERT SCREENSHOT}
 
-So we searched the web for some ruby gold, and came across a file with every country in the world, and their respective capital cities, represented as JSON in a file. We were able to read the file, and turn the JSON into a HASH, which we were then able to randomise, and ask the user for their answer, while still being able to compare it to the respective capital
+Currently, students can choice the amount of questions they would like to answer, with a counter to keep track of their score.
 
-{INSERT SCREENSHOT OF APP IN ACTION}
+{INSERT SCREENSHOT}
+
+Features to come:
+- Save their high scores
+- View the high score leaderboard
+- A better user interface for all to enjoy
