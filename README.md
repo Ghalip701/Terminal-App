@@ -10,13 +10,13 @@
 
 ![Image of Welcome Screen](https://github.com/Ghalip701/Terminal-App/blob/master/docs/Welcome%20Screen.png)
 
-## **Purpose**
+# **Purpose**
 ##### We developed this app to assist high school students in gaining more knowledge about the Capitals of  Countries through an interactive quiz.
 
-## **Functions** 
+# **Functions** 
 ##### Students will have the option to register if they are a new user, or enter their details if they are returning. Students will then be taken to the menu, which will give them the opportunity to complete a quiz and have their score saved, to check the leaderboard, or to exit. Being able to view scores will create an element of fun and competitiveness, ensuring our aims are met - INFORM. EDUCATE. ENTERTAIN. 
 
-## **Files**
+# **Files**
 
 ### 1. main.rb - the file to run the app
 
@@ -29,7 +29,7 @@
 ![Image of Menu](https://github.com/Ghalip701/Terminal-App/blob/master/docs/menu.png)
 
 
-## **Instructions for use**
+# **Instructions for use**
 ### 1. Perform < git clone https://github.com/Ghalip701/Terminal-App > 
 ### 2. Run the 'main.rb' file from terminal using the command 'ruby main.rb'
 ### 3. Choose the option for new user and enter your details
@@ -56,14 +56,14 @@
 
 
 
-## **App User Workflow**
+# **App User Workflow**
 
 ####Trivia Newton John Workflow:
 
 ![Image of Workflow](https://github.com/Ghalip701/Terminal-App/blob/master/docs/trivia_newton_john_workflow.png)
 
 
-## **Planning and Timeline**
+# **Planning and Timeline**
 
 ###  Day one
 ##### Initially we has a brainstorming session about what type of App we would be creating. After assessing and discussing all these wonderful options, we landed on the idea of an Educationl Quiz App that we would target towards High school students. We then came up with the purpose and functions of the App: Inform, Educate, Entertain. Everything we added to this app, we wanted to make sure it met either or all of those criteria.
@@ -74,7 +74,7 @@
 ##### With everything functioning, we worked on and implemented a register and login system. This was done by saving user data to a hash, converting that hash to JSON, and saving it in a file, named after the user. Our next step was to create a method to keep track of a user's score, and eventually compare those scores to other users. This proved a bit more difficult than first thought, but we managed to solve it. We saved the user's score, with their username and the time they achieved their score to a file called 'leaderboard.json'. We were than able to sort this file and print out the top 10 results. Later, we will look at implementing a system for users to display their own top 10 scores
 
 
-## **Brainstorming**
+# **Brainstorming**
 
 ##### The initial brainstorming took place with a bit of good old fashioned pen and paper:
 
@@ -82,10 +82,10 @@
 
 ##### Once we had selected a capital city trivia game, we created a file called 'ideas.txt', where we both began writing down various ideas for the app:
 
-![Image of Ideas]()
-![Image of Ideas]()
+![Image of Ideas](https://github.com/Ghalip701/Terminal-App/blob/master/docs/ideas.png)
+![Image of Ideas](https://github.com/Ghalip701/Terminal-App/blob/master/docs/ideas.png)
 
-## **Trello Boards**
+# **Trello Boards**
 ##### Trello boards were used extensively during the planning process, as we used them to ensure we wouldn't get overwhelmed. When starting a new project, its important to have a visual representation of what needs to be done, for the project to work.
 
 #### Trello board during:
@@ -94,11 +94,11 @@
 #### Trello board after:
 ![Image of Trello Board](https://github.com/Ghalip701/Terminal-App/blob/master/docs/Trello%20Board%20-%20at%20end.png)
 
-## **Ethical Issues**
+# **Ethical Issues**
 ##### Whilst Trivia Newton John is a socially positive app, helping to educate and entertain it's young users, it still faces an ethical dilemma. The capitals of numerous countries were changed to thei English spelling, for ease-of-use of our initial Australian market. A capital like 'Asunci' or Paraguay has been changed to 'Asuncion'. We are aware that this may offend some, but was a tough business decision we had to make.
 
 
-## **Scaling#**
+# **Scaling**
 ##### Facebook didn't finish their first release and say, 'We are content as a glorified blogging platform.' No. They went bigger and better. We are no different. Yes, we've created a trivia app to rival names like 'Trivial Pursuit', but, we have plans to go further.
 
 
