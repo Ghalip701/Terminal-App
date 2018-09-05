@@ -30,9 +30,9 @@ class User
             puts "[2] Returning User"
             puts "[3] Exit"
             user_decision = gets.chomp.downcase
-            if user_decision == '1'
+            if user_decision == '1' || user_decision.downcase == 'new user' 
                 discover_user_information
-            elsif user_decision == '2'
+            elsif user_decision == '2' || user_decision.downcase == 'returning user' 
                 login
             else
                 puts "See you next time!"
@@ -126,6 +126,7 @@ class User
         File.open("userDetails/#{@username}.json", 'a') do |f|
             f.puts JSON.generate(@user_data)
         end
+        Quiz.menu
     end
 
     #Gathers user details as a hash to send to their unique file
