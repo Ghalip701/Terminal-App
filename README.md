@@ -2,25 +2,48 @@ Hamish Lees and Ghalip Yakob
 
 #### https://github.com/Ghalip701/Terminal-App
 
-# #** Trivia Newton John **# 
+# **Trivia Newton John**
    
 ## **INFORM. EDUCATE. ENTERTAIN**
 
-### Welcome screen from app:
+#### Welcome screen from app:
 
-![Image of Welcome Screen](https://octodex.github.com/images/yaktocat.png)
+![Image of Welcome Screen](https://github.com/Ghalip701/Terminal-App/blob/master/docs/Welcome%20Screen.png)
 
-### **Purpose**
-### We developed this app to assist high school students to get more knowledge about the Capitals of  Countries. 
-### **Functions** 
-### Students will have the option to register if they are a new user, or enter their details if they are returning. Students will then be taken to the menu, which will give them the opportunity to complete a quiz and have their score saved, to check the leaderboard, or to exit. Being able to view scores will create an element of fun and competitiveness, ensuring our aims are met - INFORM. EDUCATE. ENTERTAIN. 
+## **Purpose**
+##### We developed this app to assist high school students to get more knowledge about the Capitals of  Countries. 
+## **Functions** 
+##### Students will have the option to register if they are a new user, or enter their details if they are returning. Students will then be taken to the menu, which will give them the opportunity to complete a quiz and have their score saved, to check the leaderboard, or to exit. Being able to view scores will create an element of fun and competitiveness, ensuring our aims are met - INFORM. EDUCATE. ENTERTAIN. 
 
-### **Instructions for use**
-### 1. Perform a ''' git clone https://github.com/Ghalip701/Terminal-App ''' on this repository
-### 2. Run the 'main.rb' file from terminal using the command 'ruby main.rb'
-### 3. Choose the option for new user and enter your details
-### 4. Try a quiz, and save your score
-### 5. Try beat your score next time!
+#### Menu:
+
+![Image of Menu](https://github.com/Ghalip701/Terminal-App/blob/master/docs/menu.png)
+
+
+## **Instructions for use**
+#### 1. Perform < git clone https://github.com/Ghalip701/Terminal-App > 
+#### 2. Run the 'main.rb' file from terminal using the command 'ruby main.rb'
+#### 3. Choose the option for new user and enter your details
+
+#### Login Screen:
+
+![Image of Login Screen](https://github.com/Ghalip701/Terminal-App/blob/master/docs/create_username.png)
+
+#### 4. Try a quiz, and save your score
+
+#### Correct Answer:
+
+![Image of Correct Answer](https://github.com/Ghalip701/Terminal-App/blob/master/docs/correct%20answer.png)
+
+#### Incorrect Answer:
+
+![Image of Incorrect Answer](https://github.com/Ghalip701/Terminal-App/blob/master/docs/incorrect%20answer.png)
+
+#### 5. Try beat your score next time!
+
+#### Leaderboard:
+
+![Image of Leaderboard](https://github.com/Ghalip701/Terminal-App/blob/master/docs/leaderboard.png)
 
 
 
