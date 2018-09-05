@@ -3,6 +3,7 @@
 require 'io/console' 
 
 class Quiz
+    attr_accessor :score
 
     class << self 
             
