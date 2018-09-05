@@ -47,17 +47,17 @@ class User
         def discover_user_information
             system("clear")
             puts "What is your first name?"
-            @name = gets.chomp.capitalize
-            puts "Hi #{@name}. What would you like to select for your username?"
+            @first_name = gets.chomp.capitalize
+            puts "Hi #{@first_name}. What would you like to select for your username?"
             @username = gets.chomp.downcase
             username_exist?
             sleep(2)
             system("clear")
             puts "#{@username}, an excellent choice! "
-            puts "#{@name}, the last thing we need from you is a password. Make sure its unique, but something you'll remember."
+            puts "#{@first_name}, the last thing we need from you is a password. Make sure its unique, but something you'll remember."
             @password = gets.chomp
             puts "Alrighty. Your account has been created, and you are ready to go!"
-            user = User.new(@name, @username, @password)
+            user = User.new(@first_name, @username, @password)
         end
 
         #Runs a while loop to see if @username file exists. If it exists, its already been taken, and the user must select another...if it doesn't exist, it goes back to the 'discover_user_function'
@@ -100,7 +100,7 @@ class User
                     sleep(2)
                 end
             end
-            Quiz.menu
+            quiz = Quiz.new(@username, @first_name)
         end
 
         #Creates an array to store user data from their '@username.json' file. This is used to get their value for @username, @first_name, @password and @high_score
@@ -120,13 +120,12 @@ class User
 
     #The initialize function that is only called if the user has been verified as a new user. It then sends the user to 'add_user_details_to_file'
     def initialize name, username, password
-        @name = name
+        @first_name = name
         @username = username
         @password = password
         @high_score = 0
         self.class.all << self
         add_user_details_to_file
-        #name = Quiz.new
     end
 
     #This gets the user's details using the 'user_details' function and sends them to a file, saved with their unique username. After doing this, it points the user to the menu
@@ -135,7 +134,7 @@ class User
         File.open("userDetails/#{@username}.json", 'a') do |f|
             f.puts JSON.generate(@user_data)
         end
-        Quiz.menu
+        quiz = Quiz.new(@username, @first_name)
     end
 
     #Gathers user details as a hash to send to their unique file
@@ -143,7 +142,7 @@ class User
         @user_data = Hash.new
         @user_data["username"] = @username
         @user_data["password"] = @password
-        @user_data["first_name"] = @name
+        @user_data["first_name"] = @first_name
         @user_data["high_score"] = @high_score
     end
 end
