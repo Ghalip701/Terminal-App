@@ -22,12 +22,30 @@ class User
             end
         end
 
+        #FIXME: Stylise screen if theres time
+        def login_screen
+            puts "Welcome to Trivia Newtown John"
+            puts "Please select an option"
+            puts "[1] New User"
+            puts "[2] Returning User"
+            puts "[3] Exit"
+            user_decision = gets.chomp.downcase
+            if user_decision == '1'
+                discover_user_information
+            elsif user_decision == '2'
+                login
+            else
+                puts "See you next time!"
+                exit
+            end
+        end
+
         #This gets user to enter in their first_name, username and password. The username is taken to the function 'username_exist?' to see if the name is unique, or if it has been used before. On the last line, it calls the 'User.new' to create a new instance of the class User
         def discover_user_information
             puts "What is your first name?"
             @name = gets.chomp.capitalize
             puts "Hi #{@name}. What would you like to select for your username?"
-            @username = gets.chomp
+            @username = gets.chomp.downcase
             username_exist?
             puts "#{@username}, an excellent choice! "
             puts "#{@name}, the last thing we need from you is a password. Make sure its unique, but something you'll remember."
@@ -73,7 +91,7 @@ class User
                     sleep(2)
                 end
             end
-            menu
+            Quiz.menu
         end
 
         #Creates an array to store user data from their '@username.json' file. This is used to get their value for @username, @first_name, @password and @high_score
@@ -99,6 +117,7 @@ class User
         @high_score = 0
         self.class.all << self
         add_user_details_to_file
+        #name = Quiz.new
     end
 
     #This gets the user's details using the 'user_details' function and sends them to a file, saved with their unique username. After doing this, it points the user to the menu
@@ -107,7 +126,6 @@ class User
         File.open("userDetails/#{@username}.json", 'a') do |f|
             f.puts JSON.generate(@user_data)
         end
-        menu
     end
 
     #Gathers user details as a hash to send to their unique file
@@ -117,31 +135,5 @@ class User
         @user_data["password"] = @password
         @user_data["first_name"] = @name
         @user_data["high_score"] = @high_score
-    end
-
-    def menu
-        puts "Welcome to Trivia Newton"
-    end
-
-
-   
-end
-
-
-#FIXME: Stylise screen if theres time
-def login_screen
-    puts "Welcome to Trivia Newtown John"
-    puts "Please select an option"
-    puts "1. New User"
-    puts "2. Returning User"
-    puts "3. Exit"
-    user_decision = gets.chomp.downcase
-    if user_decision == '1' || user_decision == '1. new user' || user_decision == 'new user'
-        User.discover_user_information
-    elsif user_decision == '2' || user_decision == '2. returning user' || user_decision == 'returning user'
-        User.login
-    else
-        puts "See you next time!"
-        exit
     end
 end
