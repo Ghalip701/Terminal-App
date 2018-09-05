@@ -124,7 +124,7 @@ class Quiz
         #Send date, username and score to users own file. This will come in handy later, when a feature is implemented for users to check their own best scores
         def send_to_file
             File.open("userDetails/#{@@username}.json", "a") do |f|
-                f.puts JSON.generate(user_score)
+                f.puts JSON.generate(@new_score)
             end
         end
 
